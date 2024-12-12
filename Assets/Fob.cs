@@ -35,5 +35,11 @@ public class Fob : MonoBehaviour, IPointerClickHandler
 
     }
 
+    // Detect trigger collision
+
+    void OnTriggerEnter(Collider other) {
+        Debug.Log("OnTriggerEnter with" + other.gameObject.name);
+        Destroy(gameObject);
+    }
 
 }
