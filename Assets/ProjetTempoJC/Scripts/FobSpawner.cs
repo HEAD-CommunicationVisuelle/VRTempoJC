@@ -11,7 +11,6 @@ public class FobSpawner : MonoBehaviour
     public float horizontalSpread = 1f;
     public float verticalSpread = 1f;
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,11 +19,11 @@ public class FobSpawner : MonoBehaviour
 
     void Spawn () {
 
-        // spawn 10 fobs along the z axis
+        // spawn fobs along the sppawner's z axis
         for (int i = 0; i < fobCount; i++) {
 
             float distance = initialSpeed * spawnInitialDelay + i * initialSpeed * spawnDelay;
-            Vector3 position = transform.position + new Vector3(0, 0, distance);
+            Vector3 position = transform.position + transform.forward * distance;
 
             // Instantiate a new Fob at the position every 2 seconds
             GameObject fob = Instantiate(fobPrefabs[Random.Range(0, fobPrefabs.Count())], position, Quaternion.identity);
