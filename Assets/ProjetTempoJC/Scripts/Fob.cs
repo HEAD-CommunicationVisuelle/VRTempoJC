@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class Fob : MonoBehaviour, IPointerClickHandler
 {
@@ -39,8 +40,11 @@ public class Fob : MonoBehaviour, IPointerClickHandler
     // Update is called once per frame
     void Update()
     {
+        // Turbo speed if T key pressed
+        float turbo = Keyboard.current.tKey.isPressed ? 10 : 1;
+
         // Move the object on z axis
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * turbo * Time.deltaTime);
     }
      public void OnPointerClick(PointerEventData eventData)
      
