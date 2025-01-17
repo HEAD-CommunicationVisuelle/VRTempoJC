@@ -150,9 +150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fobPrefabs:
   - {fileID: 9174213890221181683, guid: 22d902c5bf5184c6a9ed963db1c73702, type: 3}
-  - {fileID: 9174213890221181683, guid: 308d73bf8b4e9470892d2a85685f90b6, type: 3}
-  - {fileID: 9174213890221181683, guid: 1ac5886c0c1cb4a5f8e222ca7e387403, type: 3}
-  - {fileID: 9174213890221181683, guid: f21ad62374f02414298a4de423ee31d0, type: 3}
+  - {fileID: 9174213890221181683, guid: 902d43e63dd8842dda98549b91719994, type: 3}
+  - {fileID: 9174213890221181683, guid: d8cd2998385a1430b9dec7e920d312f8, type: 3}
+  - {fileID: 9174213890221181683, guid: de308767acbf44187ab45196621a0ccc, type: 3}
   spawnInitialDelay: 2
   spawnDelay: 2
   initialSpeed: 1
